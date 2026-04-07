@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Introduction - English School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #252525;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    header {
+      background: #303030;
+      padding: 20px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      color: #2ecc71;
+    }
+    nav a {
+      color: #e0e0e0;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #2ecc71;
+    }
+    .video-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 40px 60px;
+      background: #333333;
+    }
+    .video-section h2 {
+      margin-bottom: 20px;
+      color: #e0e0e0;
+      font-size: 2em;
+    }
+    .video-section iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    footer {
+      background: #303030;
+      text-align: center;
+      padding: 20px;
+      color: #e0e0e0;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>English School</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="video-section">
+    <h2>Watch Our School Introduction</h2>
+    <iframe src="https://www.youtube.com/embed/NNZ_6zxJYPU" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 English School. All rights reserved.</p>
+    <p>Website by Magjan and Aibek</p>
+  </footer>
+</body>
+</html>

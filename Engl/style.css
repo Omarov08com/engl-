@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    background-color: #252525;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #303030;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    color: #2ecc71;
+  }
+  
+  nav a {
+    color: #e0e0e0;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #2ecc71;
+  }
+  
+  section {
+    padding: 100px 40px 60px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .courses, .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #373737;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background: #464646;
+  }
+  
+  form {
+    background: #373737;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #484848;
+    color: #e0e0e0;
+  }
+  
+  form button {
+    background: #2ecc71;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  form button:hover {
+    background: #27ae60;
+  }
+  
+  footer {
+    background: #303030;
+    text-align: center;
+    padding: 20px;
+    color: #e0e0e0;
+  }
+  
+  .video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+    background: #333333;
+  }
+  
+  .video-section h2 {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+  }
+  
+  .video-section iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Анимации для появления */
+  #home {
+    animation-delay: 1s;
+  }
+  #about {
+    animation-delay: 2s;
+  }
+  #courses {
+    animation-delay: 1s;
+  }
+  #testimonials {
+    animation-delay: 1s;
+  }
+  #video {
+    animation-delay: 1s;
+  }
+  #contact {
+    animation-delay: 1s;
+  }
+  #signup {
+    animation-delay: 1s;
+  }
+  
